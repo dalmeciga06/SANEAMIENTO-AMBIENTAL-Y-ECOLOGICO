@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio Ambiental | Ingeniería Civil</title>
+
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#061a12;
+    color:#e6f4ea;
+    scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    background:#03140c;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+nav a{
+    color:#86efac;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+}
+
+nav a:hover{color:#22c55e;}
+
+/* HERO */
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(6,26,18,0.85), rgba(6,26,18,0.95)),
+    url('ECOSISTEMA.png');
+    background-size:cover;
+    background-position:center;
+    padding:20px;
+}
+
+header h1{font-size:3rem;}
+header p{margin-top:15px;color:#86efac;}
+
+.btn{
+    margin-top:30px;
+    padding:14px 30px;
+    background:#22c55e;
+    color:#052e16;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+.btn:hover{background:#16a34a;}
+
+section{
+    padding:120px 20px;
+    max-width:1200px;
+    margin:auto;
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+section.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:60px;
+    font-size:2.2rem;
+    color:#4ade80;
+}
+
+/* CARDS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#0f2e20;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.5);
+    transition:0.4s;
+}
+.card:hover{transform:translateY(-10px);}
+
+.card h3{color:#22c55e;margin-bottom:15px;}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.img-box{
+    background:#0c2419;
+    padding:15px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.4s;
+}
+.img-box:hover{transform:scale(1.05);}
+.gallery img{width:100%;border-radius:12px;}
+.img-box p{margin-top:10px;color:#86efac;font-size:0.9rem;}
+
+/* TIMELINE */
+.timeline{
+    border-left:3px solid #22c55e;
+    padding-left:20px;
+}
+.timeline-item{margin-bottom:25px;}
+.timeline-item h4{color:#4ade80;}
+
+/* COUNTER */
+.counter{
+    text-align:center;
+    font-size:3rem;
+    color:#22c55e;
+}
+
+/* FOOTER */
+footer{
+    background:#021009;
+    padding:40px;
+    text-align:center;
+    color:#86efac;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div><strong>Portafolio Ambiental</strong></div>
+    <div>
+        <a href="#perfil">Perfil</a>
+        <a href="#bitacora">Bitácora</a>
+        <a href="#ia">IA</a>
+    </div>
+</nav>
+
+<header>
+    <h1>Carlos Duvan Almeciga & Daniel Fabian Gacha Rondon</h1>
+    <p>Ingeniería Civil con Enfoque en Sostenibilidad y Gestión Ambiental</p>
+    <a href="#perfil" class="btn">Explorar Proyecto</a>
+</header>
+
+<section id="perfil">
+    <h2>Equipo Profesional</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Carlos Duvan Almeciga</h3>
+            <p>Estudiante de Ingeniería con experiencia en infraestructura vial,
+            delineación técnica y levantamientos topográficos.
+            Integración de principios ecológicos en proyectos de ingeniería civil.</p>
+        </div>
+
+        <div class="card">
+            <h3>Daniel Fabian Gacha Rondon</h3>
+            <p>Estudiante de Ingeniería con enfoque en análisis técnico,
+            planificación territorial y gestión sostenible de recursos.
+            Interesado en la aplicación de soluciones ambientales
+            dentro del diseño y ejecución de obras civiles.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="bitacora">
+    <h2>Bitácora – Fundamentos de Ecología</h2>
+
+    <div class="gallery">
+
+        <div class="img-box">
+            <img src="ECOSISTEMA.png">
+            <p>Ciclo ecológico y flujo de energía</p>
+        </div>
+
+        <div class="img-box">
+            <img src="FACTORES.png">
+            <p>Factores bióticos y abióticos</p>
+        </div>
+
+        <div class="img-box">
+            <img src="CICLOS.png">
+            <p>Adaptación y biodiversidad</p>
+        </div>
+
+        <div class="img-box">
+            <img src="leop.png">
+            <p>Biodiversidad terrestre</p>
+        </div>
+
+        <div class="img-box">
+            <img src="tortuga.png">
+            <p>Ecosistema marino</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="impacto">
+    <h2>Impacto Ambiental</h2>
+    <div class="counter" id="contador">0</div>
+    <p style="text-align:center;margin-top:20px;">
+        Principios ecológicos integrados en soluciones de ingeniería sostenible.
+    </p>
+</section>
+
+<section id="ia">
+    <h2>Integración de Inteligencia Artificial</h2>
+    <div class="card">
+        <p>
+            Este portafolio fue desarrollado mediante herramientas de Inteligencia Artificial
+            para la generación de código, diseño visual, estructuración técnica
+            y optimización de contenidos digitales.
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2026 - Portafolio Académico Ingeniería Civil Sostenible
+</footer>
+
+<script>
+
+/* Scroll Animation */
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll", () => {
+    sections.forEach(sec => {
+        const offset = sec.offsetTop - 500;
+        if(window.scrollY > offset){
+            sec.classList.add("visible");
+        }
+    });
+});
+
+/* Counter */
+let contador = document.getElementById("contador");
+let valor = 0;
+let intervalo = setInterval(()=>{
+    valor++;
+    contador.textContent = valor;
+    if(valor >= 120){
+        clearInterval(intervalo);
+    }
+},25);
+
+</script>
+
+</body>
+</html>
